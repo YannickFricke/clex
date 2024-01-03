@@ -11,3 +11,7 @@ install:
 .PHONY: format
 format:
 	${MIX_EXECUTABLE} format
+
+.PHONY: docs
+docs:
+	${MIX_EXECUTABLE} docs
