@@ -1,13 +1,24 @@
 defmodule Clex.MixProject do
   use Mix.Project
 
+  @github_url "https://github.com/YannickFricke/clex"
+
   def project do
     [
       app: :clex,
       version: "0.0.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+
+      # ex_doc related stuff
+      name: "Clex",
+      source_url: @github_url,
+      homepage_url: @github_url,
+      docs: [
+        main: "Clex",
+        extras: ["README.md"]
+      ]
     ]
   end
 
