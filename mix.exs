@@ -19,6 +19,9 @@ defmodule Clex.MixProject do
   end
 
   defp deps do
-    []
+    [
+      # Used for code formatting
+      {:styler, "~> 0.11", only: [:dev, :test], runtime: false}
+    ]
   end
 end
