@@ -7,3 +7,7 @@ clear:
 .PHONY: install
 install:
 	${MIX_EXECUTABLE} do deps.get, deps.compile
+
+.PHONY: format
+format:
+	${MIX_EXECUTABLE} format
