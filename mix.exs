@@ -16,7 +16,7 @@ defmodule Clex.MixProject do
       source_url: @github_url,
       homepage_url: @github_url,
       docs: [
-        main: "Clex",
+        main: "readme",
         extras: ["README.md"]
       ]
     ]
