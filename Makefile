@@ -12,6 +12,10 @@ install:
 format:
 	${MIX_EXECUTABLE} format
 
+.PHONY: check-format
+check-format:
+	${MIX_EXECUTABLE} format --check-formatted
+
 .PHONY: docs
 docs:
 	${MIX_EXECUTABLE} docs
