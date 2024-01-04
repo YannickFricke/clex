@@ -8,6 +8,10 @@ clear:
 install:
 	${MIX_EXECUTABLE} do deps.get, deps.compile
 
+.PHONY: test
+test:
+	${MIX_EXECUTABLE} test
+
 .PHONY: format
 format:
 	${MIX_EXECUTABLE} format
